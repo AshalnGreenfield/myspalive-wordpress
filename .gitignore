@@ -31,6 +31,20 @@ wp-config.php
 
 # Log files
 *.log
+/wp-content/wflogs/
+
+# Cache directories
+/wp-content/cache/
+/wp-content/mc_data/
+/wp-content/metasync_data/
+/wp-content/metasync_caches/
+
+# Backup directories
+/wp-content/updraft/
+
+# Suspicious/malicious files
+/wp-content/advanced-cache.php.malicious.backup
+/wp-content/themes/rxwqcday.php
 
 # htaccess
 /.htaccess
@@ -39,10 +53,13 @@ wp-config.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
-#/wp-content/plugins
+/wp-content/plugins
 
 # All themes
 #
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+.git-credentials-local
+wp-cli.phar 
