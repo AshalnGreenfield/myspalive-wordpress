@@ -61,5 +61,4 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 
-.git-credentials-local
 wp-cli.phar 
