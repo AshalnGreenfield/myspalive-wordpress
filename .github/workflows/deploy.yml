@@ -1,4 +1,4 @@
-name: WordPress Production Deploy
+name: WordPress Deploy
 
 on:
   push:
@@ -13,12 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy full code safely
-        uses: burnett01/rsync-deployments@v5
-        with:
-          switches: "-avz --exclude .git --exclude .github"
-          path: ./
-          remote_path: /var/www/html/wordpress/
-          remote_host: ${{ secrets.SERVER_IP }}
-          remote_user: ${{ secrets.SERVER_USER }}
-          remote_key: ${{ secrets.SSH_KEY }}
+      - name: Install rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to server
+        run: |
+          rsync -avz \
+          --exclude=".git" \
+          --exclude=".github" \
+          ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/wordpress/
