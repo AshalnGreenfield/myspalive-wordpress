@@ -1,0 +1,24 @@
+name: WordPress Production Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy full code safely
+        uses: burnett01/rsync-deployments@v6
+        with:
+          switches: -avz --exclude ".git" --exclude ".github"
+          path: ./
+          remote_path: /var/www/html/wordpress/
+          remote_host: ${{ secrets.SERVER_IP }}
+          remote_user: ${{ secrets.SERVER_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
