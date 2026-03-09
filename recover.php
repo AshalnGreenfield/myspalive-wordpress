@@ -523,7 +523,7 @@
                             <!-- START MAIN CONTENT AREA -->
                             <!-- Text Download  & QR -->
                             <div class="dwnapp">
-                                <img style="max-width: 120px;" src="https://myspalive.com/wp-content/uploads/2023/01/qr-code.png">
+                                <img style="max-width: 120px;" src="https://blog.myspalive.com/wp-content/uploads/2023/01/qr-code.png">
                                 <p style="color:white">Download our app</p>
                             </div>
                             <div style="padding: 40px;" id="restorePassword">
@@ -603,7 +603,7 @@
             </div>
         </body>
 
-    <script src="https://myspalive.com/jquery-1.11.3.min.js"></script>
+    <script src="https://blog.myspalive.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
@@ -641,7 +641,7 @@
                                 showConfirmButton: false,
                                 timer: 1500
                             })
-                            window.location.href = "https://myspalive.com/redirect.php";
+                            window.location.href = "https://blog.myspalive.com/redirect.php";
                         } else {
                             Swal.fire({
                                 icon: 'error',
@@ -649,7 +649,7 @@
                                 text: 'You have already used this link.',
                             });
                         }
-                        // window.location.href = "https://myspalive.com/";
+                        // window.location.href = "https://blog.myspalive.com/";
                     },
                     error: function (data) {
 
