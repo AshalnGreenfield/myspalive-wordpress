@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="https://myspalive.com/Zach.png">
+		<link rel="shortcut icon" href="https://blog.myspalive.com/Zach.png">
 		<title>Evaluation</title>
 
 		<!-- <link rel="stylesheet" href="/assets/plugins/global/rating/css/star-rating.min.css">
@@ -102,7 +102,7 @@
 		</script>
 	</head>
 	<body>
-		<img class="logo" src="https://myspalive.com/Zach.png" alt="Zach Cannon MD" />
+		<img class="logo" src="https://blog.myspalive.com/Zach.png" alt="Zach Cannon MD" />
 		<div class="card-evaluation">
 			<b class="title-treatment">The following survey will be used to improve our services. This survey is anonymous unless you type your name below. Thank you for taking the time to give us honest feedback.</b>
 			<br>
@@ -214,7 +214,7 @@
 					            cancelButton: "btn btn-secondary",
 					        },
 					    }).then((result) => {
-					        document.location.href = 'https://myspalive.com';
+					        document.location.href = 'https://blog.myspalive.com';
 					    });
 					} 
 				} 
@@ -251,7 +251,7 @@
 	</script> -->
 	
 
-	<script src="https://myspalive.com/jquery-1.11.3.min.js"></script>
+	<script src="https://blog.myspalive.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
@@ -337,7 +337,7 @@
 					            cancelButton: "btn btn-secondary",
 					        },
 					    }).then((result) => {
-					        document.location.href = 'https://myspalive.com';
+					        document.location.href = 'https://blog.myspalive.com';
 					    });
 					} 
 				} 
@@ -373,7 +373,7 @@
 						showConfirmButton: false,
 						timer: 1500
 					});
-					window.location.href = "https://myspalive.com/";
+					window.location.href = "https://blog.myspalive.com/";
 				},
 				error: function (data) {
 

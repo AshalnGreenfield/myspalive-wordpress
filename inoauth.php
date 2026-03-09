@@ -4,7 +4,7 @@
 	// Configura las credenciales de la aplicación
 	//$app_id = '279554517847774';
 	//$app_secret = '58807762ff6ffc7027d0c490e24f200d';
-	//$redirect_uri = 'https://myspalive.com/inoauth.php';
+	//$redirect_uri = 'https://blog.myspalive.com/inoauth.php';
 
 	/* $grantType = 'authorization_code';
 

@@ -6,7 +6,7 @@
 	$access="cwjg334nSH2sgduYjT4w2Q:PgBKogYLDo8yh3SoJewIwt10CWGHUorP";
 
 	
-	$query = "grant_type=authorization_code&code=$code&redirect_uri=https://myspalive.com/zoom.php";
+	$query = "grant_type=authorization_code&code=$code&redirect_uri=https://blog.myspalive.com/zoom.php";
 	
 	$token_url="https://zoom.us/oauth/token?" . $query;
 

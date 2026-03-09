@@ -280,7 +280,7 @@
                     <!-- START MAIN CONTENT AREA -->
                     <!-- Text Download  & QR -->
                     <div class="dwnapp">
-                        <img style="max-width: 120px;" src="https://myspalive.com/wp-content/uploads/2023/01/qr-code.png">
+                        <img style="max-width: 120px;" src="https://blog.myspalive.com/wp-content/uploads/2023/01/qr-code.png">
                         <p style="color:white">Download our app</p>
                     </div>
                     <div style="text-align:center; padding: 40px;">
