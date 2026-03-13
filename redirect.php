@@ -50,7 +50,7 @@
         header('Location: https://play.google.com/store/apps/details?id=com.spalive.app');
         exit;
     } else {
-        //header('Location: https://app.myspalive.com/login');
-        header('Location: https://flutterdev.myspalive.com/login');         
+        header('Location: https://app.myspalive.com/login');
+        //header('Location: https://flutterdev.myspalive.com/login');         
     }
 ?>
