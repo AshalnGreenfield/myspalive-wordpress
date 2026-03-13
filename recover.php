@@ -646,7 +646,8 @@
                             Swal.fire({
                                 icon: 'error',
                                 title: 'Oops...',
-                                text: 'You have already used this link.',
+                                //text: 'You have already used this link.',
+                                text: data.messages[0],
                             });
                         }
                         // window.location.href = "https://blog.myspalive.com/";
