@@ -623,7 +623,7 @@
 
             if($("#password").val() === $("#confirm_password").val()){
                 $.ajax({
-                    url: "https://api-dev.myspalive.com/",
+                    url: "https://api.myspalive.com/",
                     
                     // url: "http://127.0.0.1/apispalive/",
                     method: "POST",
